@@ -8,7 +8,14 @@ export default function App() {
       <h1 style={{ paddingTop: "1rem", textAlign: "center" }}>Hello Bitwyre</h1>
 
       <h2>Task #1</h2>
-      <p>Implement debounce input</p>
+      <p>
+        Implement debounce input, if the user type too fast, the backend could
+        have a problem because we sent too many API Request
+      </p>
+      <p>
+        To address this, we simply prevent the function to wait for the user to
+        idle before they sent an API Request
+      </p>
 
       <InputWithDebounce />
 
